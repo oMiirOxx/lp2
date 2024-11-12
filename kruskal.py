@@ -21,5 +21,10 @@ def kruskal(graph):
                     components[v] = new_component
 
     return mst
-graph = {'A': {'B': 2, 'C': 3}, 'B': {'A': 2, 'C': 4}, 'C': {'A': 3, 'B': 4}}
+
+graph = {
+    'A': {'B': 2, 'C': 3}, 
+    'B': {'A': 2, 'C': 4}, 
+    'C': {'A': 3, 'B': 4}
+}
 print(kruskal(graph))
