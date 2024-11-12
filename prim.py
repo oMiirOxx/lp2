@@ -1,17 +1,3 @@
-# Theory
-'''
-
-Prim's algorithm is a greedy algorithm used to find the minimum spanning tree (MST) of a weighted undirected graph. 
-A minimum spanning tree is a tree that connects all nodes in a graph with the minimum total edge weight.
-
-Here are the steps to execute Prim's algorithm:
-
-Choose any vertex to start with and add it to the MST.
-1)Find the edge with the smallest weight that connects any vertex in the MST to a vertex not in the MST.
-2)Add the new vertex and edge to the MST.
-3)Repeat steps 2 and 3 until all vertices are in the MST.
-'''
-
 def prim(graph):
     mst = []
     visited = set()
