@@ -1,16 +1,3 @@
-'''
-Kruskal's algorithm is another greedy algorithm used to find the minimum spanning tree (MST) of a weighted undirected graph. Like Prim's algorithm, Kruskal's algorithm also finds the MST by adding edges to a set, but it does so in a different way.
-
-Here are the steps to execute Kruskal's algorithm:
-
-1)Create a set of edges sorted by their weights.
-2)Initialize an empty set of edges to represent the MST.
-3)For each edge in the set of edges:
-    a. If adding the edge to the MST does not create a cycle, add it to the MST.
-4)Return the MST.
-'''
-
-
 def kruskal(graph):
     # Create a list of edges sorted by their weights
     edges = [(cost, frm, to) for frm in graph for to, cost in graph[frm].items()]
