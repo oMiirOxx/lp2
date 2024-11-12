@@ -1,3 +1,6 @@
+import heapq
+#for priority queue
+
 def dijkstra(graph, start):
     # Create a dictionary to store the distance from the start vertex to each vertex
     distances = {vertex: float('inf') for vertex in graph}
